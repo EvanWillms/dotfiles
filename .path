@@ -1,0 +1,2 @@
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+export PATH="~/bin:$PATH"
