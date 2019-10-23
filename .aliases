@@ -18,6 +18,13 @@ alias g="git"
 alias gup="git smart-pull"
 alias gl="git smart-log"
 alias gs="git status"
+alias gd='git diff'
+alias gda='git diff HEAD'
+alias ga='git add'
+alias gaa='git add .'
+alias gaaa='git add --all'
+alias gau='git add --update'
+alias gb='git branch'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
