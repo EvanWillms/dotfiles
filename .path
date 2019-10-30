@@ -1,2 +1,12 @@
-export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-export PATH="~/bin:$PATH"
+pathadd () {
+        if ! echo "$PATH" | /usr/local/bin/ggrep -Eq "(^|:)$1($|:)" ; then
+           if [ "$2" = "after" ] ; then
+              PATH="$PATH:$1"
+           else
+              PATH="$1:$PATH"
+           fi
+        fi
+}
+
+pathadd "/usr/local/opt/bin"
+pathadd "~/bin"
