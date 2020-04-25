@@ -10,3 +10,5 @@ pathadd () {
 
 pathadd "/usr/local/opt/bin"
 pathadd "~/bin"
+pathadd "/usr/local/opt/openssl@1.1/bin"
+pathadd "/usr/local/sbin"
